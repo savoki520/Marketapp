@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>核销</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body style="background: rgba(248,248,248,1)">
+    <!--头部导航栏-->
+    <header class="wo_header" data-status="0">
+        <div class="wo_header_box">
+            <div class="wo_header_item wo_header_add" data-status="0">未核销</div>
+            <div class="wo_header_item" data-status="1">已核销</div>
+        </div>
+    </header>
+    <!--主体内容列表-->
+    <section class="wo_content">
+        <div class="wo_content_one">
+            <div class="wo_content_oneimg" id="wo_select">
+                <img src="image/writeoff/select.png">
+            </div>
+            <div class="wo_content_oneselect">
+                <input type="text" class="wo_select">
+            </div>
+        </div>
+        <div class="wo_content_two">
+            <!--加载动画-->
+            <!--<div class="index_anmat">-->
+                <!--<div class="sk-wave">-->
+                    <!--<div class="sk-rect sk-rect1"></div>-->
+                    <!--<div class="sk-rect sk-rect2"></div>-->
+                    <!--<div class="sk-rect sk-rect3"></div>-->
+                    <!--<div class="sk-rect sk-rect4"></div>-->
+                    <!--<div class="sk-rect sk-rect5"></div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <div class="slice">
+                <div data-loader="circle"></div>
+            </div>
+            <!--<div class="wo_no"></div>-->
+            <!--<div class="wo_item">-->
+                <!--<div class="wo_item_img">-->
+                    <!--<img src="image/myactivity/m_1.png">-->
+                <!--</div>-->
+                <!--<div class="wo_item_title">常州购物中心全球好货狂欢节！100元团200元代金券</div>-->
+                <!--<div class="wo_item_one">-->
+                    <!--<div class="wo_item_acterbox">-->
+                        <!--<div class="wo_item_actername">购买人：</div>-->
+                        <!--<div class="wo_item_acter">-->
+                            <!--<img src="image/index/acter.png">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="wo_item_namebox">-->
+                        <!--<div class="wo_item_nametit">昵称：</div>-->
+                        <!--<div class="wo_item_name">Savoki</div>-->
+                    <!--</div>-->
+                    <!--<div class="wo_item_button wo_item_wf" onclick="wr()">核销</div>-->
+                <!--</div>-->
+                <!--<div class="wo_item_paytime">支付时间：2019年10月5日 18:59:10</div>-->
+                <!--<div class="wo_item_amout">-->
+                    <!--<div class="wo_item_new">现价：￥<span class="wo_item_newprices">50.00</span></div>-->
+                    <!--<div class="wo_item_old">原价：￥<span class="wo_item_oldprices">99.00</span></div>-->
+                <!--</div>-->
+
+                <!--<div class="wo_item_codebox">-->
+                    <!--<div class="wo_item_codeone">核销码</div>-->
+                    <!--<div class="wo_item_codetwo">-->
+                        <!--<div class="wo_item_code">ABC1234657890</div>-->
+                        <!--<div class="wo_item_timebox">-->
+                            <!--<div class="wo_item_time">19/6/5</div>-->
+                            <!--<div class="wo_item_timefont">有效期</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+        </div>
+        <div class="wo_more" data-page="1">下一页</div>
+    </section>
+    <!--底部导航栏-->
+    <footer class="wo_footer">
+        <a class="wo_fitem" href="index.html">
+            <div class="wo_fitmeimg">
+                <img src="image/index/nav_0.png">
+            </div>
+            <div class="wo_fitemfont">首页</div>
+        </a>
+        <a class="wo_fitem" href="myactivity.html">
+            <div class="wo_fitmeimg">
+                <img src="image/index/nav_1.png">
+            </div>
+            <div class="wo_fitemfont">活动</div>
+        </a>
+        <a class="wo_fitem" href="#">
+            <div class="wo_fitmeimg">
+                <img src="image/index/nav_2.png">
+            </div>
+            <div class="wo_fitemfont">核销</div>
+        </a>
+        <a class="wo_fitem" href="http://www.youguangchina.cn/hd/platformapp/index.html?sh=0">
+            <div class="wo_fitmeimg">
+                <img src="image/index/nav_3.png">
+            </div>
+            <div class="wo_fitemfont">平台</div>
+        </a>
+    </footer>
+    <!--核销确认弹框-->
+    <div class="wr">
+        <div class="wr_box">
+            <div class="wr_title">确定核销？</div>
+            <div class="wr_do">
+                <div class="wr_ok">确定</div>
+                <div class="wr_cannel">取消</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/app.js"></script>
+<script src="js/rem1.js"></script>
+<script>
+    localStorage.setItem('key','writeoff')
+</script>
+</html>

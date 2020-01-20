@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/rem1.js"></script>
+</head>
+<body style="background: rgba(255,255,255,1)">
+<!--头部标签-->
+    <header class="index_header">
+        <div class="index_header_title index_header_left">基本信息</div>
+        <div class="index_header_title index_header_right">
+            <div class="index_header_title" id="index_canel">退出登录</div>
+            <div class="index_header_title" id="index_changepass">修改密码</div>
+        </div>
+        <div class="index_main_acter">
+            <img src="" id="index_acter">
+        </div>
+        <div class="index_header_infor">
+            <div class="index_header_inforline"></div>
+            <div class="index_header_infortitle">基本信息</div>
+        </div>
+    </header>
+<!--主体-->
+    <section class="index_main">
+        <div class="index_main_information">
+            <div class="index_main_item">
+                <div class="index_main_item_name">商家名称:</div>
+                <div class="index_main_shopname index_main_item_font" id="index_shopname"></div>
+            </div>
+            <div class="index_main_item">
+                <div class="index_main_item_name">联系方式:</div>
+                <div class="index_main_shopphone index_main_item_font" id="index_phone"></div>
+            </div>
+            <div class="index_main_item">
+                <div class="index_main_item_name">联系地址:</div>
+                <div class="index_main_shopaddress index_main_item_font" id="index_address"></div>
+            </div>
+            <div class="index_main_item">
+                <div class="index_main_item_name">手续费:</div>
+                <div class="index_main_handlingfee index_main_item_font" id="index_handfee"></div>
+            </div>
+            <div class="index_main_item">
+                <div class="index_main_item_name">登录账号:</div>
+                <div class="index_main_shopaccount index_main_item_font" id="index_account"></div>
+            </div>
+            <div class="index_main_item">
+                <div class="index_main_item_name">微信绑定:</div>
+                <div class="index_main_wx index_main_item_font" id="index_wx">
+                    <div class="index_main_wxfont">
+                        <div>已绑定</div></div>
+                    <div class="index_main_wxbind">
+                        <div class="index_main_wxbindfont">未绑定</div>
+                        <div class="index_main_wxbinging">微信绑定</div>
+                    </div>
+                </div>
+            </div>
+            <div class="index_main_item_edd">*一个微信号只能绑定一个商户</div>
+        </div>
+
+        <div class="index_property">
+            <!--<div class="index_main_wxbinding">微信绑定</div>-->
+            <div class="index_py_name">
+                <div class="index_py_nameline"></div>
+                <div class="index_py_nametitle">我的收益</div>
+            </div>
+
+            <div class="index-py">
+                <div class="index_pyy_box">
+                    <div class="index_py_item">
+                        <div class="index_py_item_title">总收益</div>
+                        <div class="index_py_item_content">
+                            <div class="index_py_item_one">
+                                <span>￥</span>
+                                <span class="index_py_item_oneamount" id="totalrevenue"></span>
+                            </div>
+                            <div class="index_py_item_two">
+                                <img src="image/index/i_2.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index_py_item" style="margin-right: 0">
+                        <div class="index_py_item_title" id="now_month"></div>
+                        <div class="index_py_item_content">
+                            <div class="index_py_item_one">
+                                <span>￥</span>
+                                <span class="index_py_item_oneamount" id="monthrevenue"></span>
+                            </div>
+                            <div class="index_py_item_two">
+                                <img src="image/index/i_1.png">
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="index_py_item">-->
+                        <!--<div class="index_py_item_title">总收益(不含佣金)</div>-->
+                        <!--<div class="index_py_item_content">-->
+                            <!--<div class="index_py_item_one">-->
+                                <!--<span>￥</span>-->
+                                <!--<span class="index_py_item_oneamount" id="zjrevenue"></span>-->
+                            <!--</div>-->
+                            <!--<div class="index_py_item_two">-->
+                                <!--<img src="image/index/i_2.png">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="index_py_item" style="margin-right: 0">-->
+                        <!--<div class="index_py_item_title" id="zjmouth"></div>-->
+                        <!--<div class="index_py_item_content">-->
+                            <!--<div class="index_py_item_one">-->
+                                <!--<span>￥</span>-->
+                                <!--<span class="index_py_item_oneamount" id="zhmonthrevenue"></span>-->
+                            <!--</div>-->
+                            <!--<div class="index_py_item_two">-->
+                                <!--<img src="image/index/i_1.png">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <div class="index_py_item">
+                        <div class="index_py_item_title">进行中的活动</div>
+                        <div class="index_py_item_content">
+                            <div class="index_py_item_one">
+                                <!--<span>￥</span>-->
+                                <span class="index_py_item_onenumber" style="text-align: center"></span>
+                            </div>
+                            <div class="index_py_item_two">
+                                <img src="image/index/i_3.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index_py_item" style="margin-right: 0">
+                        <div class="index_py_item_title">售出数量</div>
+                        <div class="index_py_item_content">
+                            <div class="index_py_item_one">
+
+                                <span class="index_py_item_oneamount" id="totalnumber"></span>
+                                <span style="font-size: 0.15rem">份</span>
+                            </div>
+                            <div class="index_py_item_two">
+                                <img src="image/index/i_4.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="index_py_contact">
+                    <div class="index_py_contact_item">
+                        <div class="index_py_contactimg">
+                            <img src="image/index/i_5.png">
+                        </div>
+                        <div class="index_py_contactfont">联系我们</div>
+                    </div>
+                    <div class="index_py_contact_itemline"></div>
+                    <div class="index_py_contact_item cash_href">
+                        <div class="index_py_contactimg" style="float: right; margin-right: 0.1rem;margin-top: 0.15rem">
+                            <img src="image/index/i_6.jpg">
+                        </div>
+                        <div class="index_py_contactfont" style="float: right;">资金明细</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--<div class="index_nav">-->
+            <!--<a class="index_nav_item" href="myactivity.html">-->
+                <!--<div class="index_nav_item_img">-->
+                    <!--<img src="image/index/nav_0.png">-->
+                <!--</div>-->
+                <!--<div class="index_nav_item_font">我的活动</div>-->
+            <!--</a>-->
+            <!--<a class="index_nav_item" href="writeoff.html">-->
+                <!--<div class="index_nav_item_img">-->
+                    <!--<img src="image/index/nav_0.png">-->
+                <!--</div>-->
+                <!--<div class="index_nav_item_font">核销</div>-->
+            <!--</a>-->
+            <!--<a class="index_nav_item">-->
+                <!--<div class="index_nav_item_img">-->
+                    <!--<img src="image/index/nav_1.png">-->
+                <!--</div>-->
+                <!--<div class="index_nav_item_font">成为团长</div>-->
+            <!--</a>-->
+        <!--</div>-->
+    </section>
+<!--底部导航栏-->
+    <footer class="wo_footer">
+        <a class="wo_fitem" href="#">
+            <div class="wo_fitmeimg">
+                <img src="image/index/nav_0.png">
+            </div>
+            <div class="wo_fitemfont">首页</div>
+        </a>
+        <a class="wo_fitem" href="myactivity.html">
+            <div class="wo_fitmeimg">
+                <img src="image/index/nav_1.png">
+            </div>
+            <div class="wo_fitemfont">活动</div>
+        </a>
+        <a class="wo_fitem" href="writeoff.html">
+            <div class="wo_fitmeimg">
+                <img src="image/index/nav_2.png">
+            </div>
+            <div class="wo_fitemfont">核销</div>
+        </a>
+        <a class="wo_fitem" href="http://www.youguangchina.cn/hd/platformapp/index.html?sh=0">
+            <div class="wo_fitmeimg">
+                <img src="image/index/nav_3.png">
+            </div>
+            <div class="wo_fitemfont">平台</div>
+        </a>
+    </footer>
+<!--绑定银行卡弹框-->
+    <div class="index_bind">
+        <div class="bind">
+            <div class="bind_header">绑定银行卡</div>
+            <div class="bind_main">
+                <div class="bind_main_item">
+                    <div class="bind_main_item_title">收款账号：</div>
+                    <input type="text" class="bind_account" onchange="numlimit($(this))">
+                </div>
+                <div class="bind_main_item">
+                    <div class="bind_main_item_title">开户名称：</div>
+                    <input type="text" class="bind_account">
+                </div>
+                <div class="bind_main_item">
+                    <div class="bind_main_item_title">开户行：</div>
+                    <select class="bind_main_select" id="select">
+                        <option>请选择银行</option>
+                        <option>中国建设银行</option>
+                        <option>中国商业银行</option>
+                        <option>中国工业银行</option>
+                        <option>中国银行</option>
+                        <option>上海浦发银行</option>
+                        <option>江南银行</option>
+                        <option>中国农业银行</option>
+                        <option>中国农村商业合作社</option>
+                    </select>
+                </div>
+                <div class="bind_main_result">
+                    <div class="bind_ok">确定</div>
+                    <div class="bind_canel">取消</div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--提现弹框-->
+    <div class="index_withdraw">
+        <div class="index_wd">
+            <div class="index_wdfont">请确认授权微信号为提现微信号</div>
+            <div class="index_maxfont">最大提现金额：<span class="index_max"></span></div>
+            <div class="index_ip">
+                <input type="text" id="wd_account" oninput="maxx()">
+            </div>
+            <div class="index_wdbox">
+                <div class="index_wd_ok">提现</div>
+                <div class="index_wd_cannel">取消</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/app.js"></script>
+<script>
+    localStorage.setItem('key','index');
+    var myDate = new Date();
+    var month=myDate.getMonth()+1;
+    var day = myDate.getDate(),m;
+    if(day >=15){
+        m = '下半月';
+    }else {
+        m = '上半月';
+    }
+    $('#now_month').text(month+'月'+m+'收益');
+//    $('#zjmouth').text(month+'月'+ m+'收益')
+</script>
+</html>

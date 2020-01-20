@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>商家登陆</title>
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body  class="bb">
+    <!--<img src="image/login/background.png" class="bb">-->
+    <header class="login_one">
+        龙城周边GO
+
+    </header>
+    <section class="login_two">
+        <div class="login_two_name">
+            <div class="login_two_nameimg">
+                <img src="image/login/lo_1.png">
+            </div>
+            <div class="login_two_account">
+                <input type="text" id="login_account" placeholder="手机号" onchange="numberlimit($(this))">
+            </div>
+        </div>
+        <div class="login_two_name">
+            <div class="login_two_nameimg">
+                <img src="image/login/lo_2.png">
+            </div>
+            <div class="login_two_account">
+                <input type="password" id="login_password" placeholder="密码">
+            </div>
+        </div>
+    </section>
+    <div class="login_two_remeber">
+        <input type="checkbox" class="login_remeber">
+        <div>记住密码</div>
+    </div>
+    <div class="login_ok">
+        现在登录
+        <div class="login_right"></div>
+    </div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/app.js"></script>
+<script>
+    localStorage.setItem('key','login');
+    $(document).ready(function () { $('body').css({'height':$(window).height()})});
+</script>
+</html>

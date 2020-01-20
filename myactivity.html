@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>我的活动</title>
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/rem1.js"></script>
+</head>
+<body style="background: rgba(255,255,255,1)">
+    <header class="ma_header">
+        <img src="image/myactivity/m_0.png">
+    </header>
+    <section class="ma_main">
+        <div class="ma_nav">
+            <div class="ma_nav_item ma_nav_itemadd" data-status="1">进行中</div>
+            <div class="ma_nav_item" data-status="0">已结束</div>
+        </div>
+        <div class="ma_sort">
+            <div class="ma_sort_item">
+                <div class="ma_sort_item_font ma_sort_item_add" data-sort="beginTime">最新活动</div>
+            </div>
+            <div class="ma_sort_item">
+                <div class="ma_sort_item_font" data-sort="remark1">佣金最高</div>
+            </div>
+            <div class="ma_sort_item">
+                <div class="ma_sort_item_font" data-sort="sellNumber">购买最多</div>
+            </div>
+        </div>
+        <div class="ma_mc">
+            <!--加载动画-->
+            <!--<div class="index_anmat">-->
+                <!--<div class="sk-wave">-->
+                    <!--<div class="sk-rect sk-rect1"></div>-->
+                    <!--<div class="sk-rect sk-rect2"></div>-->
+                    <!--<div class="sk-rect sk-rect3"></div>-->
+                    <!--<div class="sk-rect sk-rect4"></div>-->
+                    <!--<div class="sk-rect sk-rect5"></div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <div class="slice">
+                <div data-loader="circle"></div>
+            </div>
+            <!--<div class="ma_mc_no"></div>-->
+            <!--<a class="ma_mc_item" href="http://www.youguangchina.cn/hd/platform/index.html?activityId=&shopId=&openId=null&getertype=1">-->
+                <!--<div class="ma_mc_itemone">-->
+                    <!--<div class="ma_mc_itemimg">-->
+                        <!--<img src="image/myactivity/m_1.png">-->
+                        <!--<div class="ma_mc_hotbox">热度：<span class="ma_mc_hot">128</span></div>-->
+                        <!--<div class="ma_mc_shopbox">购买：<span class="ma_mc_shop">99</span></div>-->
+                    <!--</div>-->
+                    <!--<div class="ma_mc_itemname">常州购物中心全球好货狂欢节！100元团200元代金券 4楼时尚达人馆等你来抢购！</div>-->
+                    <!--<div class="ma_mc_itemoldprice">原价：￥<span class="ma_oldprice">99.00</span></div>-->
+                    <!--<div class="ma_mc_itemprice">-->
+                        <!--<div class="ma_mc_item_newprice">现价：￥<span class="ma_newprice">50.00</span></div>-->
+                        <!--<div class="ma_mc_itemcommission">佣金：￥<span class="ma_commission">99.00</span></div>-->
+                        <!--<div class="ma_mc_itemfour">截止时间:<span class="ma_mc_itemfourfont">2019-11-29</span></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="ma_mc_itemtwo">已售出: <span class="ma_mc_itemtwofont">188</span>份</div>-->
+                <!--<div class="ma_mc_itemthree">收益:￥<span class="ma_mc_itemthreefont">188</span></div>-->
+            <!--</a>-->
+            <div class="ma_mc_page" data-page="1">加载更多...</div>
+        </div>
+
+    </section>
+    <!--底部导航栏-->
+    <footer class="wo_footer">
+        <a class="wo_fitem" href="index.html">
+            <div class="wo_fitmeimg">
+                <img src="image/index/nav_0.png">
+            </div>
+            <div class="wo_fitemfont">首页</div>
+        </a>
+        <a class="wo_fitem" href="#">
+            <div class="wo_fitmeimg">
+                <img src="image/index/nav_1.png">
+            </div>
+            <div class="wo_fitemfont">活动</div>
+        </a>
+        <a class="wo_fitem" href="writeoff.html">
+            <div class="wo_fitmeimg">
+                <img src="image/index/nav_2.png">
+            </div>
+            <div class="wo_fitemfont">核销</div>
+        </a>
+        <a class="wo_fitem" href="http://www.youguangchina.cn/hd/platformapp/index.html?sh=0">
+            <div class="wo_fitmeimg">
+                <img src="image/index/nav_3.png">
+            </div>
+            <div class="wo_fitemfont">平台</div>
+        </a>
+    </footer>
+</body>
+<script type="text/javascript" src="js/app.js"></script>
+<script src="layui/layui.js"></script>
+<script>
+    localStorage.setItem('key','activity');
+</script>
+</html>
